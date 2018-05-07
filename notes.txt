@@ -1,0 +1,28 @@
+The main file of any website is normally called index.html
+
+The first tag of any html file should be <!DOCTYPE html>
+
+HTML has tags <h1> to <h6> for specifying headings, <h1> being the largest
+
+To bold text, use <strong>Text to Bold</strong>
+For italic text, use <em>Text to italicize</em>
+To add a new line, use <br>
+
+The <img src="image location" alt="alt text if image not displayed"> elementis used to display images, and has no closing tag. 
+
+The <a href="destination link" target="_blank">Link Text</a> is used to create a link into the document. However, the target can be set to _blank to have the link open in a new tab.
+
+STYLESHEET LINKING
+To link a Stylesheet, in the <head> section, use <link rel="stylesheet" type="text/css" href="link to style sheet">. This tag doesn't have a closing tag.
+
+CSS SYNTAX: 
+e.g. 
+h1 {
+	color:green;
+	font-family:Arial, Calibri;
+	font-size:40px;
+}
+
+The "h1" above is the selector, and we can select multiple elements to be styled at a go like h1,h2{}, which can hold the common styles for both h1 and h2, with the different values still being inside the individual h1{} and h2{} selectors.
+
+If we have a style applied to the body{} element in CSS, it will be applied to all elements, irrespective of whether they are styled or not, unless they are styled separately -- CSS inheritance.
