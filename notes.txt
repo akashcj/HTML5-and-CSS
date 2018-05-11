@@ -1,3 +1,5 @@
+Link to fee ebook:https://drive.google.com/open?id=1DqFL6pxIg7FrAbGIi7PTO-STdY7nV5nv
+
 The main file of any website is normally called index.html
 
 The first tag of any html file should be <!DOCTYPE html>
@@ -26,3 +28,37 @@ h1 {
 The "h1" above is the selector, and we can select multiple elements to be styled at a go like h1,h2{}, which can hold the common styles for both h1 and h2, with the different values still being inside the individual h1{} and h2{} selectors.
 
 If we have a style applied to the body{} element in CSS, it will be applied to all elements, irrespective of whether they are styled or not, unless they are styled separately -- CSS inheritance.
+
+CSS colors
+colors in CSS are specified using the color names, hex format, or an rgb notation specifying transparency.
+e.g. color specification: 0xabcdef -- 0xab is the value for red, cd is the value for green and ef is the value for blue. 
+When using transparency, you would need to specify a value of the form: rgba(2,2,2,0.4), which will result in a color with 40% transparency.
+Note: Setting all the R, G and B values to the same will give a grey color
+Note: In the Brackets editor, pressing Ctrl+E when on a color brings up the color editor.
+
+CSS selectors can select a class like .class-name, and select ids like #id-name.
+
+CSS Box Model: A CSS element has properties like margin, border, padding, which specify the distance of an element from its edges in various ways. All of these properties can be set for the top, left, bottom and right sides.
+
+Margin -- space from an element's border to external elements
+Padding -- space from border to actual element
+border -- a line around the element, after accounting for the padding
+width,height -- width and height of the element only.
+To be able to specify the width and height of the element inclusive of the padding (that is, till the borders), we can set a css property called box-sizing, which we can set to border-box.
+
+All the above margin, padding and border values can be set for each side e.g. margin-bottom, margin-top, margin-left, and values can be set in px, % and as "auto".
+
+values can be set at a go for all 4 sides, e.g. margin: <top> <right> <bottom> <left>
+
+specifying the border needs us to specify 3 things - border width, line type and color
+e.g. border: 1px solid #8e8e8e;
+
+Block Elements: Use the full width of the browser -- e.g. headings and paragraphs
+
+Inline Elements: don't use the full width
+
+The CSS * selector: applied to all elements of the page
+
+css float property -- when applied to an element, determines how the elements position itself around other elements in the parent container, as oppossed to absolute positioning. float can have values of left, right, none and inherit.
+
+
