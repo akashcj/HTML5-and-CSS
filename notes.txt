@@ -61,4 +61,43 @@ The CSS * selector: applied to all elements of the page
 
 css float property -- when applied to an element, determines how the elements position itself around other elements in the parent container, as oppossed to absolute positioning. float can have values of left, right, none and inherit.
 
+May 14th, 2018
+
+CSS syntax: 
+.<class_name> <element_type> ==> selects all elements of type given, under a containing element with class set to class_name.
+e.g. .author_box img {}
+
+
+img border-radius:50% will give a circular image.
+
+Abosolute Positioning:
+
+if the positioning of the parent element is relative in the css (positioning: relative), we can use the style (position:absolute) for a chid element, and specify the absolute top and left values of the element, inside the parent element.
+
+Desigining Guidelines: 
+Body text should be between 15px and 25px (depends on the font and the amount of text)
+Headlines should be bigger than normal text. Increasing the Font Size may require reducing the font-weight.
+Use Line Spacing between 120% and 150%
+Line Length -- 25 to 90 characters per line, unless you have columns
+
+Use a single base color
+Create Darker and Lighter versions of the base colour, to use on the webpage.
+Never user Black in any part of the design, as black doesn't occur normally in the 
+real world
+
+Using Images:
+When text is on top of images
+Image Overlay
+Image Blur
+Floor Fade -- Where the image fades into black at the bottom, where there is text
+
+Using Icons:
+Icons should be recognizable
+If possible, Icons should be labelled
+Icons should not be the center of the design -- it should support the main theme
+Icon Fonts are vector based as they scale endlessly up/down for any resolution
+
+Designing Layout using Whitespace:
+Put whitespace between elements, groups of elements and sections, but don't exaggerate
+Use whitespace to build content flow -- not sure how though :)
 
