@@ -101,3 +101,4 @@ Designing Layout using Whitespace:
 Put whitespace between elements, groups of elements and sections, but don't exaggerate
 Use whitespace to build content flow -- not sure how though :)
 
+Media Queries: allows us to specify various css values for different browser width
