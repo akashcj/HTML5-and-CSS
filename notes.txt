@@ -102,3 +102,20 @@ Put whitespace between elements, groups of elements and sections, but don't exag
 Use whitespace to build content flow -- not sure how though :)
 
 Media Queries: allows us to specify various css values for different browser width
+
+When designing an h1 block, we can do the follow to get the letters and words space out, and reduce the font weight (by default h1s are bold). Font sizing can be specified as a percentage of the parent element's font value.
+
+h1 {
+    font-size:240%
+    font-weight:300;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    word-spacing:4px;   
+}
+
+css display attribute
+inline, block, and inline-block
+
+inline elements cannot have a width and height set. They also allow other elements to sit next to them. They only follow left and right padding/margin rules, not top/bottom.
+block elements will take up the entire browser width if their width is not set, and force a line break after it, that is not allow any other element to sit next to it. However, they allow padding/margin on all 4 sides. They also allow their width and height to be set.
+inline-block elements allow other elements to sit to the left and right of themselves, allow margin/padding on all 4 sides and allow their width and height to be set.
