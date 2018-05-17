@@ -14,7 +14,10 @@ html {
 }
 
 .row{
-    margin:0 auto;
+    position:absolute;
+    max-width: 1140px;
+    margin: 0 auto;
+    transform: translate(40%, 0);
 }
 
 h1{
@@ -29,20 +32,9 @@ h1{
     text-transform: uppercase;
 }
 
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(255, 255, 255, 0.7)),url('img/hero.jpg');
-    background-size:cover;
-    background-position: center;
-    height: 100vh;
-}
-
-.hero-text-box {
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
-
+/*-----------------------------------------------*/
+/*-----------BUTTON SECTION----------------------*/
+/*-----------------------------------------------*/
 .btn:link, 
 .btn:active{
     display: inline-block;
@@ -70,3 +62,53 @@ header {
     border: 1px solid #e87e04;
 }
 
+/*-----------------------------------------------*/
+/*-----------HEADER SECTION----------------------*/
+/*-----------------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(255, 255, 255, 0.7)),url('img/hero.jpg');
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.logo{
+    height: 100px;
+    width:auto;
+    float:left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float:right;
+    list-style: none;
+    margin-top:55px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:90%;
+    padding:8px 0;
+    transform: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e87e04;
+}
