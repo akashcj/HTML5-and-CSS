@@ -119,3 +119,18 @@ inline, block, and inline-block
 inline elements cannot have a width and height set. They also allow other elements to sit next to them. They only follow left and right padding/margin rules, not top/bottom.
 block elements will take up the entire browser width if their width is not set, and force a line break after it, that is not allow any other element to sit next to it. However, they allow padding/margin on all 4 sides. They also allow their width and height to be set.
 inline-block elements allow other elements to sit to the left and right of themselves, allow margin/padding on all 4 sides and allow their width and height to be set.
+
+
+17 May 2018
+
+css elements can have states, e.g., an <a> element can have a state of link (normal state), visited(after visited), hover(when the mouse is over) and active (when we click on the element)
+e.g. if an a element has been decorated with a "special-a" class, we can target one of the above states in css using
+special-a:link{
+color: green;
+}
+we can also target multiple states together by using a "," symbol to separate out 2 selectors.
+e.g. 
+special-a:link, special-a:visited{
+color:green;
+}
+In the above case, both visited links and not visited links would look the same

@@ -44,18 +44,20 @@ header {
 }
 
 .btn{
-    color: #ffff;
+    display: inline-block;
     border-radius: 200px;
-    padding: 10px;
+    padding: 10px 30px;
     text-decoration: none;
     border: 1px solid #e87e04;
+    font-weight: 300;
 }
 
 .btn-full{
+    color: #fff;
     background-color: #fb8f13;
 }
 
 .btn-ghost{
-    
+    color: #fb8f13;
 }
 
