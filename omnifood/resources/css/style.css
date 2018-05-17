@@ -52,16 +52,15 @@ header {
     border: 1px solid #fb8f13;
     font-weight: 300;
     transition: background-color 0.2s, color 0.2s, border 0.2s;
+    color:#fff;
 }
 
 .btn-ghost:link, 
 .btn-ghost:active{
-    color: #fb8f13;
 }
 
 .btn-full:link, 
 .btn-full:active{
-    color: #fff;
     background-color: #fb8f13;
     margin: 15px;
 }
@@ -69,6 +68,5 @@ header {
 .btn:hover{
     background-color: #e87e04;
     border: 1px solid #e87e04;
-    color:#fff;
 }
 
