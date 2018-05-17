@@ -122,7 +122,7 @@ inline-block elements allow other elements to sit to the left and right of thems
 
 
 17 May 2018
-
+TARGETING LINK STATES
 css elements can have states, e.g., an <a> element can have a state of link (normal state), visited(after visited), hover(when the mouse is over) and active (when we click on the element)
 e.g. if an a element has been decorated with a "special-a" class, we can target one of the above states in css using
 special-a:link{
@@ -134,3 +134,11 @@ special-a:link, special-a:visited{
 color:green;
 }
 In the above case, both visited links and not visited links would look the same
+
+CSS Transitions
+We can use the transition property to give a delay before an element changes from one state to another
+e.g.
+btn:link{
+    transition: background-color:0.2s, color: 0.2s, border: 0.2s;
+}
+In the above case, in the case of a transition, the background-color, color and border property changes within 0.2
