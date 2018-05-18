@@ -14,10 +14,9 @@ html {
 }
 
 .row{
-    position:absolute;
     max-width: 1140px;
     margin: 0 auto;
-    transform: translate(40%, 0);
+    background-color:red;
 }
 
 h1{
