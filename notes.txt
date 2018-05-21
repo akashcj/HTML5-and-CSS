@@ -142,3 +142,6 @@ btn:link{
     transition: background-color:0.2s, color: 0.2s, border: 0.2s;
 }
 In the above case, in the case of a transition, the background-color, color and border property changes within 0.2
+
+Icons
+To use custom icons, you can use the icons at ionicon.com.

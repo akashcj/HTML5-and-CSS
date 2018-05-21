@@ -13,10 +13,16 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.header-row{
+    position:absolute;
+    max-width: 1140px;
+    margin: 0 auto;
+    transform: translate(40%,0);
+}
+
 .row{
     max-width: 1140px;
     margin: 0 auto;
-    background-color:red;
 }
 
 h1{
