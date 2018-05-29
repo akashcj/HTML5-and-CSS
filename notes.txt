@@ -143,5 +143,19 @@ btn:link{
 }
 In the above case, in the case of a transition, the background-color, color and border property changes within 0.2
 
+CSS Transform property
+can be used to change attributes of the original element
+e.g. .meal-photo img:hover{
+	transform: scale(1.03);
+}
+
+In the above case, the meal-photo class' image, on hover, increases its size by 3%.
+
 Icons
 To use custom icons, you can use the icons at ionicon.com.
+In the latest version (V4), the individual icons are set up as individual SVG files, which need to be downloaded. 
+
+In v2, the icons are actually fonts which can be treated as such, adjusting the font-size and color, after we download the font and the css files to respective folders. We can create an icon in the format <i class="ion-icon-heart"></i> to get the icon.
+
+
+

@@ -1,3 +1,6 @@
+/***light-orange:#fb8f13
+****dark-orange:#e87e04
+***********/
 *{
     margin:0px;
     padding:0px;
@@ -13,11 +16,24 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix{
+    clear:both;
+}
+
+/* .clearfix{
+    zoom: 1;
+}
+clearfix::after{
+    content:'.';
+    clear:both;
+    display:block;
+    height:0;
+    visibility:hidden;
+} */
+
 .header-row{
-    position:absolute;
     max-width: 1140px;
     margin: 0 auto;
-    transform: translate(40%,0);
 }
 
 .row{
@@ -25,23 +41,82 @@ html {
     margin: 0 auto;
 }
 
+/************************************/
+/***********PARAGRAPHS***************/
+/************************************/
+
+.long-copy{
+    line-height: 140%;
+    width:70%;
+    margin-left:15%;
+}
+
+/************************************/
+/***********HEADINGS*****************/
+/************************************/
+
+h1,
+h2,
+h3{
+    font-weight:300;
+    text-transform: uppercase;
+}
+
 h1{
     margin-top:0;
     margin-bottom:20px;
-    width:1140px;
     color: #fff;
     font-size:240%;
-    font-weight:300;
-    letter-spacing: 1px;
     word-spacing: 4px;
-    text-transform: uppercase;
+    width:1140px;
+    letter-spacing: 1px;
+    
+}
+
+h2{
+    font-size:180%;
+    word-spacing: 4px;
+    text-align: center;
+    margin-bottom:30px;  
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size:110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display:block;
+    height:2px;
+    width:100px;
+    background-color:#e87e04;
+    content:"";
+    margin: 15px auto 0 auto;
+}
+
+.box p{
+    font-size:90%;
+    line-height:145%;
+}
+
+/*---------------------------------------------------*/
+/*----------------ICONS SECTION-------------------*/
+/*---------------------------------------------------*/
+
+.icon-big{
+    color: #e87e04;
+    font-size:350%;
+    margin-bottom:10px;
+
 }
 
 /*-----------------------------------------------*/
 /*-----------BUTTON SECTION----------------------*/
 /*-----------------------------------------------*/
 .btn:link, 
-.btn:active{
+.btn:active,
+.btn:visited{
     display: inline-block;
     border-radius: 200px;
     padding: 10px 30px;
@@ -52,12 +127,9 @@ h1{
     color:#fff;
 }
 
-.btn-ghost:link, 
-.btn-ghost:active{
-}
-
 .btn-full:link, 
-.btn-full:active{
+.btn-full:active,
+.btn-full:visited{
     background-color: #fb8f13;
     margin: 15px;
 }
@@ -90,6 +162,7 @@ header {
     width:auto;
     float:left;
     margin-top: 20px;
+    margin-left: 10px;
 }
 
 .main-nav{
@@ -116,4 +189,120 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active{
     border-bottom: 2px solid #e87e04;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.box{
+    padding:1%;
+}
+
+/****************************************************/
+/***************SECTION FEATURES*********************/
+/****************************************************/
+.secton-features .long-copy{
+    margin-bottom: 30px;
+}
+
+/****************************************************/
+/***************MEALS SECTION************************/
+/****************************************************/
+
+.section-meals{
+    padding: 0;
+}
+
+.meals-showcase{
+    list-style: none;
+    width:100%;
+}
+
+.meals-showcase li{
+    float:left;
+    width:25%;
+}
+
+.meal-photo{
+    margin:0;
+    overflow:hidden;
+    background-color:black;
+}
+
+.meal-photo img{
+    width:100%;
+    transform: scale(1.15);
+    opacity:0.7;
+}
+
+.meal-photo img:hover{
+    transform: scale(1.03);
+    opacity:1;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/****************************************************************/
+/******************Steps Section*********************************/
+/****************************************************************/
+
+.section-steps{
+    background-color: #f4f4f4;
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right:3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child{
+    padding-left:3%;
+    margin-top:70px;
+    margin-bottom:70px;
+}
+
+.app-screen{
+    width:40%;
+}
+
+.btn-app{
+    height: 50px;
+    margin-right: 10px;
+}
+
+.works-step{
+    margin-bottom: 50px;
+}
+
+.works-step div{
+    /* display:inline-block; */
+    color: #fb8f13;
+    padding :5px;
+    text-align: center;
+    border-radius: 50%;
+    height:55px;
+    width: 55px;
+    border: 2px solid #fb8f13;
+    float:left;
+    font-size:150%;
+    margin-right: 25px;
+}
+
+/****************************************************/
+/***************CITIES SECTION************************/
+/****************************************************/
+.city-images-box{
+    margin:0px;
+    padding:0px;
+}
+
+.xyz
+{
+    border: 5px solid green;
+}
+
+.city-image img{
+    transform: scale(0.5);
+    border: 2px solid red;
 }
