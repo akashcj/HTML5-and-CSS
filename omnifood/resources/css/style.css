@@ -111,8 +111,35 @@ h2:after {
 
 }
 
+.icon-small{
+    display:inline-block;
+    margin-top:-4px;
+    color: #e87e04;
+    font-size:120%;
+    margin-right:10px;
+    vertical-align: middle;
+
+}
+
 /*-----------------------------------------------*/
-/*-----------BUTTON SECTION----------------------*/
+/*-----------LINKS----------------------*/
+/*-----------------------------------------------*/
+a:link,
+a:visited{
+    color:#fb8f13;
+    text-decoration: none;
+    border-bottom: 1px solid #fb8f13;
+    padding-bottom: 1px;
+}
+
+a:hover{
+    color: #e87e04;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+/*-----------------------------------------------*/
+/*-----------BUTTONS----------------------*/
 /*-----------------------------------------------*/
 .btn:link, 
 .btn:active,
@@ -266,7 +293,12 @@ section {
     width:40%;
 }
 
-.btn-app{
+.btn-app:link,
+.btn-app:visited{
+    border:0;
+}
+
+.btn-app img{
     height: 50px;
     margin-right: 10px;
 }
@@ -293,26 +325,23 @@ section {
 /***************CITIES SECTION************************/
 /****************************************************/
 
-.city-images-box
-{
-    margin:0;
-}
-
-.city-image {
-    margin:0px;
-    background-color:black;
-    overflow:hidden;
-}
-
-.city-image img{
+.box img {
     display: inline-block;
     width:100%;
-    transform: scale(1.2);
+    height:auto;
+    transform: scale(.98);
     opacity: 0.7;
+    margin:0px;
+    overflow:hidden;
+    margin-bottom:15px;
 }
 
-.city-image img:hover{
+.box img:hover{
     transform: scale(1.06);
     opacity:1;
     transition: transform 0.2s, opacity 0.2s;
+}
+
+.city-feature{
+    margin-bottom:5px;
 }
