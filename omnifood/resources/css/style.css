@@ -158,11 +158,17 @@ a:hover{
 .btn-full:active,
 .btn-full:visited{
     background-color: #fb8f13;
-    margin: 15px;
+}
+
+.btn-ghost:link, 
+.btn-ghost:active,
+.btn-ghost:visited{
+    color: #fb8f13;
 }
 
 .btn:hover{
     background-color: #e87e04;
+    color:#fff;
     border: 1px solid #e87e04;
 }
 
@@ -335,6 +341,7 @@ section {
     margin:0px;
     overflow:hidden;
     margin-bottom:15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
 }
 
 .box img:hover{
@@ -385,4 +392,61 @@ cite img{
     border-radius:50%;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+/****************************************************/
+/***************PLANS SECTION************************/
+/****************************************************/
+
+.section-plans{
+    background-color:#f4f4f4;
+}
+
+.plan-box{
+    background-color:white;
+    border-radius:5px;
+    margin-left:5%;
+    width:90%;
+    box-shadow: 0 2px 2px #e8e8e8;
+}
+
+.plan-box div{
+    padding :15px;
+    border-bottom: 1px solid #e8e8e8;
+
+}
+
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+    text-align:center;
+    border: 0;
+}
+
+.plan-price{
+    font-size:300%;
+    margin-bottom:10px;
+    font-weight:100;
+    color: #fb8f13;
+}
+
+.plan-price span{
+        font-size:30%;
+        font-weight:300;
+}
+
+.plan-price-meal{
+    font-size:80%;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
 }

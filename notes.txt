@@ -166,4 +166,11 @@ We can give a dark background to an image by setting multiple images in the back
 
 We can also given a scroll effect, where the image seems to be fixed in place behind the webpage, and we view the image only when the "image window" is on top of it.
 
+10-Jun-2018
+
+we can select a specific child of a css selector by using decorators like :first-child and :last-child
+e.g. if you want to give a specific border to only the last element of a selector, you can say
+.box :last-child{
+    border-bottom: 1px solid #e8e8e8;
+}
 
