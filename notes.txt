@@ -174,3 +174,28 @@ e.g. if you want to give a specific border to only the last element of a selecto
     border-bottom: 1px solid #e8e8e8;
 }
 
+input types
+
+TextBox:<input type="text" name="name" id="name required" placeholder="Your Name">
+required means that the field is required, and the browser will not let you submit without filling the field
+Placeholder is the text shown in the control before the user enters a value
+
+email: <input type="email" name="email" id="email">
+The browser enforces that the text entered matches an email address format
+
+Drop Down: Selected means that the option is selected by default
+<select>
+    <option value="online" selected>Online</option>
+    <option value="ad">Advertisement</option>
+    <option value="other">Others</option>
+</select>
+
+Checkbox: checked means that the checkbox is checked by default
+<input type="checkbox" checked> Hey There! 
+
+Text Area:
+<input type="textarea" placeholder="Your Message">
+
+submit button: value is what is displayed to the user
+<input type="submit" value="Send It">
+
