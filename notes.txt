@@ -174,7 +174,7 @@ e.g. if you want to give a specific border to only the last element of a selecto
     border-bottom: 1px solid #e8e8e8;
 }
 
-input types
+HTML INPUT TYPES
 
 TextBox:<input type="text" name="name" id="name required" placeholder="Your Name">
 required means that the field is required, and the browser will not let you submit without filling the field
@@ -198,4 +198,17 @@ Text Area:
 
 submit button: value is what is displayed to the user
 <input type="submit" value="Send It">
+
+A new type of CSS selector is
+input[type=text]{
+    background-color:#fff;
+    color: #000;
+}
+
+This will give a white background and black text color to only those inputs of type text
+
+*:focus{
+    outline:none;
+}
+removes the browser outline which comes by default when an element is selected
 

@@ -142,34 +142,37 @@ a:hover{
 /*-----------BUTTONS----------------------*/
 /*-----------------------------------------------*/
 .btn:link, 
-.btn:active,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     border-radius: 200px;
     padding: 10px 30px;
     text-decoration: none;
-    border: 1px solid #fb8f13;
     font-weight: 300;
     transition: background-color 0.2s, color 0.2s, border 0.2s;
-    color:#fff;
 }
 
 .btn-full:link, 
-.btn-full:active,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]{
     background-color: #fb8f13;
+    border: 1px solid #fb8f13;
+    color:#fff;
+    margin-right:15px;
 }
 
 .btn-ghost:link, 
-.btn-ghost:active,
 .btn-ghost:visited{
+    border: 1px solid #fb8f13;
     color: #fb8f13;
 }
 
-.btn:hover{
+.btn:hover,
+.btn:active,
+input[type=submit]:hover{
     background-color: #e87e04;
-    color:#fff;
     border: 1px solid #e87e04;
+    color: #fff;
 }
 
 /*-----------------------------------------------*/
@@ -449,4 +452,34 @@ cite img{
 
 .plan-box ul li{
     padding: 5px 0;
+}
+
+/****************************************************/
+/***************FORMS SECTION************************/
+/****************************************************/
+.section-form{
+    width:60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textArea{
+    width:100%;
+    padding:7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textArea{
+    height:100px;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{
+    outline:none;
 }
